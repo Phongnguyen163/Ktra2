@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="rs"></h2>
+<script>
+    let a = [
+        [1,2,3],
+        [4,5,6]
+    ];
+    let text = "";
+    for (let i = 0; i< a.length; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if (a[i][j] % 2 === 0) {
+                text = text + a[i][j] + " ";
+            }
+        }
+    }
+    document.getElementById('rs').innerHTML = "Cac phan tu chan trong mang: "+ text;
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="rs"></h2>
+<script>
+    let a = [
+        [1,2,3],
+        [4,5,6]
+    ];
+    let b= [];
+    let min;
+    for (let i = 0; i< a.length; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if (a[i][j] % 2 === 0) {
+                    b.push(a[i][j]);
+                }
+            }
+    }
+    min = b[0];
+    for (let i = 0; i<b.length; i++) {
+        if (b[i]<min){
+            min = b[i];
+        }
+    }
+    document.getElementById('rs').innerHTML = "Phan tu chan nho nhat trong mang: "+ min;
+</script>
+</body>
+</html>
