@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="rs"></h2>
+<script>
+    //Chỉ áp dụng cho ma trận vuông
+    let a = [
+        [15, 8, 5],
+        [4, 5, 6],
+        [1, 4, 9]
+    ];
+    let text = "";
+    for (let i = 0; i < a.length; i++) {
+        let min = a[0][i];
+        for (let j = 0; j < a[i].length; j++) {
+            if (a[j][i] < min) {
+                min = a[j][i];
+            }
+        }
+        text = text + min + "<br>";
+    }
+    document.getElementById('rs').innerHTML = "Phan tu min cua cot la: " + text;
+</script>
+</body>
+</html>
